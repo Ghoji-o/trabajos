@@ -7,6 +7,26 @@ body {
     font-size: 12px;
 }
 
+main {
+    margin: auto;
+    width: 90vw;
+}
+
+.products {
+    border: 15px;
+}
+
+.main-sections {
+    background-color: #ebebeb;
+    margin: 10px;
+    padding: 5px;
+}
+
+article {
+    margin: 10px 0px;
+    border: 1px solid #ebebeb;
+}
+
 h4 {
     font-size: 24px;
     color: #666;
@@ -62,24 +82,16 @@ h4 {
 }
 
 .precios {
-    font-size: 18px;
+    font-size: 30%;
 }
 
-br{
-    font-size: 16px;
+span {
+    font-size: 70%;
     color: #39b54a;
     font-weight: normal;
 }
 
-.main-sections {
-    background-color: #ebebeb;
-    padding: 10px;
-}
 
-
-article {
-    padding: 10px 0px;
-}
 
 .fa-truck {
     color: #39b54a;
@@ -107,4 +119,14 @@ footer div i {
     body {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+    .right-navbar, .left-navbar {
+        display: block;
+    }
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 769px){
+
 }

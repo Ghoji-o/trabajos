@@ -11,7 +11,7 @@ app.get ('/', (req, res) => {
 })
 
 app.listen(4000, () => {
-    console.log('El servidor funca');
+    console.log('El servidor funca en el puerto 4000');
 })
 
 //npm i -D nodemon para instalar nodemon

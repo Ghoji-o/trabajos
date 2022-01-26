@@ -9,6 +9,9 @@ body {
 .main-header{
     background-color: #EAC926;
     padding: 20px;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
 }
 
 .hamburguer-buttom{
@@ -25,6 +28,17 @@ body {
 
 .logo {
     width: 200px;
+    animation: aumentar 1s linear  infinite alternate ;
+}
+
+@keyframes aumentar {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
 }
 
 .copy-header {
@@ -52,6 +66,7 @@ body {
 
 .create-form {
     padding: 20px 15px;
+    margin-top: 244px;
 }
 
 .control-formulario {
@@ -76,6 +91,40 @@ body {
     color: #ffffff;
     padding: 5px 10px;
     border-radius: 8px;
+}
+
+.product {
+    border: 1px solid black;
+    padding: 0px 15px;
+    position: relative;
+    margin: 30px 15px;
+}
+
+.product img{
+    width: 100%;
+}
+
+.product:hover h2 {
+    opacity:1;
+    background-color: rgb(221, 169, 26, 0.5);
+    border-radius: 30%;
+}
+
+.product h2 {
+    background-color: rgb(0, 0, 0, 0.8) ;
+    color: #ffffff;
+    margin: 0;
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 450ms;
 }
 
 @media (min-width: 778px) {
