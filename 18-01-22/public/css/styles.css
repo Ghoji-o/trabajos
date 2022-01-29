@@ -160,7 +160,8 @@ footer div {
         padding: 5px 65px;
         border-radius: 10px;
     } 
-
+    /*home 2*/
+    
 
 }
 
@@ -194,6 +195,14 @@ footer div {
         .user-logo-container {
             left: 800px;
             bottom: 60px;
+        }
+
+        .right-arrow {
+            position: relative;
+            color: #bc753c;
+            font-size: 35px;
+            left: 975px;
+            bottom: 113px;
         }
 }
 

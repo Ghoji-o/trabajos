@@ -1,4 +1,6 @@
 * {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -9,7 +11,6 @@ body {
 
 main {
     margin: auto;
-    width: 90vw;
 }
 
 .products {
@@ -77,13 +78,30 @@ h4 {
     display: none;
 }
 
+.descripcion {
+    background-color: #ffffff;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
 .product-name {
     display: none;
 }
 
 .precios {
-    font-size: 30%;
+    font-size: 16px;
 }
+/*display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;*/
 
 span {
     font-size: 70%;
@@ -91,18 +109,12 @@ span {
     font-weight: normal;
 }
 
-
-
 .fa-truck {
     color: #39b54a;
     font-size: 2em;
 }
 
-.descripcion {
-    background-color: #ffffff;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-}
+
 
 footer {
     text-align: center;
