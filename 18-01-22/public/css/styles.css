@@ -96,7 +96,7 @@ main {
     background-color: #f4b076;
 }
 
-.img-concert {
+main article img {
     width: 250px;
     height: 130px;
     position: relative;
@@ -104,10 +104,20 @@ main {
 }
 
 
-.conciertos-container-1 {
+section {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+} 
+
+main article div {
+    margin: auto;
+}
+
+.product-description{
+    background-color:#27a2bc;
+    display: flex;
 }
 
 .left-arrow {

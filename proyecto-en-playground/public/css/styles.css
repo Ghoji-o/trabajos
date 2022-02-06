@@ -9,18 +9,15 @@ body {
     font-size: 12px;
 }
 
-main {
-    margin: auto;
-}
-
-.products {
-    border: 15px;
-}
-
-.main-sections {
+main{
     background-color: #ebebeb;
-    margin: 10px;
-    padding: 5px;
+    width: 100%;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
 }
 
 article {
@@ -47,6 +44,7 @@ h4 {
     text-align: center;
     font-size: 17px;
     margin: auto;
+    margin-top: 15px;
 }
 
 .copy-header {
@@ -74,44 +72,48 @@ h4 {
     display: inline-block;
 }
 
+.product-name{
+    color:  #666;
+}
+
 .right-navbar, .left-navbar, .product-name {
     display: none;
 }
 
-.descripcion {
+.description {
+    position: relative;
     background-color: #ffffff;
     border-top: 1px solid #ebebeb;
     padding: 15px;
 }
 
-.product-name {
-    display: none;
+.price-discount{
+    width: 100%;
 }
 
-.precios {
-    font-size: 16px;
+.price {
+    font-size: 1.1em;
 }
-/*display: block;
+
+.discount {
+    font-size: 1em;
+    color: #39b54a;
+    font-weight: normal;
+}
+
+main section article i{
+    display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
     height: 30px;
     border: 1px solid #39b54a;
-    background-color: #fff;
+    background-color: #FFF;
     border-radius: 50%;
     position: absolute;
     right: 20px;
-    top: -15px;*/
-
-span {
-    font-size: 70%;
+    top: -15px;   
     color: #39b54a;
-    font-weight: normal;
-}
-
-.fa-truck {
-    color: #39b54a;
-    font-size: 2em;
 }
 
 
@@ -127,18 +129,48 @@ footer div i {
     margin-bottom: 10px;
 }
 
+/*tablet*/
 @media (min-width: 361px){
-    body {
+
+    article {
+        display: flex;
+        flex-flow: wrap;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 50%;
     }
+
     .right-navbar, .left-navbar {
-        display: block;
+        display: contents;
     }
+
     .burger-menu {
         display: none;
     }
+
+    .product-name{
+        display: contents;
+    }
+
+    .price-discount{
+        display: flex;
+     }
+     
+     .price {
+         display: flex;
+         width: 30%;
+     }
+     
+     .discount {
+         display: flex;
+         width: 70%;
+     }
+
 }
 
+/*Desktop*/
 @media (min-width: 769px){
+    body {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 
 }

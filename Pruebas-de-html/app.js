@@ -10,5 +10,5 @@ app.listen (5000, () => {
 });
 
 app.get ('/', (req, res) => {
-    res.sendFile (path.resolve (__dirname, './views/mercadoliebre.html'));
+    res.sendFile (path.resolve (__dirname, './views/links.html'));
 });
