@@ -99,25 +99,21 @@ main {
 main article img {
     width: 250px;
     height: 130px;
-    position: relative;
-    left: 65px;
 }
 
-
-section {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} 
 
 main article div {
     margin: auto;
 }
 
 .product-description{
-    background-color:#27a2bc;
+    margin-top: 20px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#27a2bc;
+    width: 50%;
+    text-align: center;
 }
 
 .left-arrow {

@@ -7,6 +7,7 @@
 body {
     font-family:'Roboto', sans-serif;
     font-size: 12px;
+
 }
 
 main{
@@ -30,8 +31,42 @@ h4 {
     color: #666;
 }
 
+.contenedor1{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: auto;
+    margin-bottom: 10px;
+}
+
 .logo{
-    width: 200px;
+    display: flex;
+    width: 50%;
+}
+
+.contenedor-barra-de-busqueda {
+    display: flex;
+    width: 50%;
+}
+
+.barra-de-busqueda{
+    width: 100%;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2px;
+    color: #666;
+}
+
+.contenedor-boton-de-busqueda{
+    display: flex;
+    width: 50%;
+}
+
+.boton-de-busqueda{
+    border: none;
+    padding: 2px;
+    border-radius: 5px;
+    color: #666;
 }
 
 .burger-menu {
@@ -47,29 +82,15 @@ h4 {
     margin-top: 15px;
 }
 
-.copy-header {
+header p {
     text-align: center;
-    font-weight: 400;
+    max-width: 360px;
 }
-
 
 
 .main-header{
     background-color: #EAC926;
     padding: 20px;
-}
-
-.main-navbar ul{
-    list-style: none;
-    margin:0;
-    padding: 0;
-}
-
-
-.main-navbar a{
-    text-decoration: none;
-    color: #222222;
-    display: inline-block;
 }
 
 .product-name{
@@ -132,15 +153,50 @@ footer div i {
 /*tablet*/
 @media (min-width: 361px){
 
-    article {
+    section {
         display: flex;
-        flex-flow: wrap;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 50%;
+        flex-flow: row wrap;
+        justify-content: space-evenly;    
     }
 
-    .right-navbar, .left-navbar {
-        display: contents;
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 150px; 
+    }
+
+    .copy-header {
+        display: flex;
+        text-align: center;
+        font-weight: 400;
+        margin: 20px 0px;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content:space-evenly;
+    }
+        
+    .main-navbar ul{
+        display: flex;
+        list-style: none;
+        margin:0;
+        padding: 0;
+    }
+
+    .main-navbar li {
+        margin: 0 5px;
+    }
+    
+    .main-navbar a {
+        text-decoration: none;
+        color: #222222;
+        display: inline-block;
+        padding: 5px 0;
+        font-size: 12px;
+    }
+
+    .left-navbar{
+        justify-content: flex-end;
     }
 
     .burger-menu {
@@ -153,6 +209,7 @@ footer div i {
 
     .price-discount{
         display: flex;
+        width: 100%;
      }
      
      .price {
@@ -162,6 +219,7 @@ footer div i {
      
      .discount {
          display: flex;
+         justify-content: flex-end;
          width: 70%;
      }
 
@@ -173,4 +231,35 @@ footer div i {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
+    section {
+        flex-wrap: nowrap;
+    }
+
+    h4{
+        text-align:start;
+    }
+
+    .logo{
+        width: 50%;
+    }
+    
+    .barra-de-busqueda{
+        width: 50%;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 2px;
+        color: #666;
+    }
+    
+    .boton-de-busqueda{
+        border: none;
+        padding: 2px;
+        border-radius: 5px;
+        color: #666;
+    }
+
+    .copy-header{
+        display: flex;
+    }
 }

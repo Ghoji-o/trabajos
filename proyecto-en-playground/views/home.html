@@ -15,13 +15,28 @@ rel="stylesheet" />
 <body>
     
     <header class="main-header">
-        <div>
-            <img src="./img/logo-mercado-liebre.svg" class="logo"/> <br>
-            <input class="barra-de-busqueda" type="text" value="Buscar productos, marcas"> <br>
-            <button class="boton-de-busqueda"><i class="fas fa-search"></i></button>
-            <p class="copy-header"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito  </p>
+        <div class="contenedor-header">
+            
+            <section class="contenedor1">
+                <img width="340" src="./img/logo-mercado-liebre.svg" class="logo"/>
+                <div class="contenedor-barra-de-busqueda">
+                    <input class="barra-de-busqueda" type="text" value="Buscar productos, marcas">
+                </div>
+            
+                <div class="contenedor-boton-de-busqueda">
+                    <button class="boton-de-busqueda"><i class="fas fa-search"></i></button>
+                </div>
+            </section>
+
+            <div class="copy-header">
+                    <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+                </div>
         </div>
+
+        
+
         <nav class="main-navbar">
+            
             <ul class="left-navbar">
                 <li><a href="">Ofertas</a></li>
                 <li><a href="">Tiendas Oficiales</a></li>
@@ -34,11 +49,11 @@ rel="stylesheet" />
                 <li><a href="">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
                 <li><a href="">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
             </ul>
-
-            <div class="burger-menu">
-                <i class="fas fa-align-justify"></i>
-            </div>
         </nav>
+
+        <div class="burger-menu">
+            <i class="fas fa-align-justify"></i>
+        </div>
     </header>
     
     <main>
@@ -46,7 +61,7 @@ rel="stylesheet" />
         <div class="home-banner"><img width="100%" src="./img/img-home-banner.jpg" alt="Banner"></div>
 
         <!--Section de todos los productos-->
-        <h4><strong>Basados en tu última visita</strong></h4>
+        <div><h4><strong>Basados en tu última visita</strong></h4></div>
         <section class="products-part-one"> <!--Parent-->
             <article class="products"><!--Fisrt child-->
                 <div class="product-image"><img width="100%" src="./img/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex"/></div>
