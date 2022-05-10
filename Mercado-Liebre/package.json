@@ -2,7 +2,7 @@
   "name": "proyecto-en-playground",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/Ghoji-o/trabajos.git"
   },
+  "keywords": [
+    "heroku",
+    "discord.js"
+  ],
   "author": "Carola Giacomello",
   "license": "ISC",
   "bugs": {
