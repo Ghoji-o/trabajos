@@ -7,11 +7,12 @@
 body {
     font-family:'Roboto', sans-serif;
     font-size: 12px;
-
+    overflow-x: hidden;    
+    background-color: #ebebeb;
 }
 
 main{
-    background-color: #ebebeb;
+
     width: 100%;
 }
 
@@ -24,6 +25,11 @@ section {
 article {
     margin: 10px 0px;
     border: 1px solid #ebebeb;
+    transition: box-shadow 450ms;
+}
+
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
 }
 
 h4 {
@@ -31,20 +37,35 @@ h4 {
     color: #666;
 }
 
-.contenedor1{
+/*Header*/
+
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+    top: 0;
+    width: 100%;
+}
+
+.contenedor-header{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 10px;
 }
 
 .logo{
-    display: flex;
-    width: 50%;
+    width: 200px;
 }
 
-.contenedor-barra-de-busqueda {
-    display: flex;
-    width: 50%;
+.contenedor-barra-de-busqueda form{
+    display: inline-block;
+}
+
+.copy-header{
+    font-weight: 400;
+    text-align: center;
 }
 
 .barra-de-busqueda{
@@ -57,10 +78,6 @@ h4 {
     color: #666;
 }
 
-.contenedor-boton-de-busqueda{
-    display: flex;
-}
-
 .boton-de-busqueda{
     height: 30px;
     border: none;
@@ -70,16 +87,15 @@ h4 {
 }
 
 .burger-menu {
-    display: block;
     background-color: #1259c3;
-    color: #ebebeb;
-    max-width: 50px;
-    padding: 15px 0;
+    color: #ffffff;
+    display: block;
+    max-width: 40px;
+    padding: 10px 0;
     border-radius: 8px;
     text-align: center;
-    font-size: 17px;
+    font-size: 18px;
     margin: auto;
-    margin-top: 15px;
 }
 
 header p {
@@ -87,17 +103,34 @@ header p {
     max-width: 360px;
 }
 
-.main-header{
-    background-color: #EAC926;
-    padding: 20px;
-}
 
 .product-name{
+    opacity: 0;
     color:  #666;
+    margin-top: 5px;
+    transition: opacity 450ms;
+}
+
+.product-name:hover{
+    opacity: 1;
 }
 
 .right-navbar, .left-navbar, .product-name {
     display: none;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
 }
 
 .description {
@@ -105,6 +138,11 @@ header p {
     background-color: #ffffff;
     border-top: 1px solid #ebebeb;
     padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
 }
 
 .price-discount{
@@ -136,8 +174,111 @@ main section article i{
     color: #39b54a;
 }
 
+.fa-truck{
+    color: #39b54a;
+    transition: all 3s;
+}
+.fa-truck:hover{
+    animation-name: ninety-truck;
+    animation-duration: 3s;
+}
+@keyframes ninety-truck {
+    100%{
+        transform: rotateZ(-90deg);
+    }
+}
+
+/*Registro y login*/
+
+.formulario-registro{
+    padding: 50px 15px;
+    width: 80%;
+    margin-top:50px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+.formulario-login{
+    padding:150px 15px
+}
+
+.crear-user{
+    margin-bottom: 25px;
+}
+
+.crear-user-border{
+    border: 1px solid rgb(100 100 100 / 50%);
+    margin: 35px;
+    padding: 10px;
+}
+
+.crear-user label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control{
+    border-radius: 15px;
+    border: 1px solid rgb(100 100 100 / 50%);
+    padding: 8px;
+}
+
+.fa-users{
+    color: white;
+    background-color: #1259c3;
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: 0px 0px 5px rgb(100 100 100);
+    transition: all 400ms;
+}
+
+.button-form{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    max-width: 360px;
+}
+
+.boton-icon{
+    border: 0;
+}
+
+.send-button{
+    padding: 5px 50px;
+    background-color: #1259c3;
+    color: #ffffff;
+    border-radius: 15px;
+    border: 0px;
+    transition: all 400ms;
+}
+
+.send-button:hover,.fa-users:hover{
+    background-color: #0022AA;
+    cursor: pointer;
+}
+
+.crear-user-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.p-form-user{
+    font-weight: bold;
+    font-style: italic;
+}
 
 
+.crear-user #usuario{
+    width: 135px;
+}
+/*Footer*/
 footer {
     text-align: center;
     padding: 15px;
@@ -147,6 +288,26 @@ footer div i {
     font-size: 2em;
     color: #1259c3;
     margin-bottom: 10px;
+}
+
+footer p{
+    color:#666;
+}
+
+.logo-footer{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: all 400ms;
+}
+
+.logo-footer:hover{
+    color: #39b54a;
+    cursor: pointer
+}
+
+.cp-foot{
+    text-align: left;
 }
 
 /*tablet*/
@@ -159,7 +320,6 @@ footer div i {
     }
 
     article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 150px; 
     }
 
@@ -230,13 +390,38 @@ footer div i {
          width: 70%;
      }
 
+    /*Registro/Login*/
+    .formulario-registro{
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Footer*/
+    footer div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    h5{
+        margin: 10px;
+    }
+
+    footer section i{
+        margin-left: 150px;
+    }
+
+    footer section{
+        padding: 10px;
+        margin: 15px;
+    }
 }
 
 /*Desktop*/
 @media (min-width: 769px){
-    body {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
 
     section {
         flex-wrap: nowrap;
@@ -268,5 +453,9 @@ footer div i {
 
     .copy-header{
         display: flex;
+    }
+
+    .button-form{
+        margin-left: 190px;
     }
 }
